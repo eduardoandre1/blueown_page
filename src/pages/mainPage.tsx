@@ -15,7 +15,7 @@ export default function MainPage(){
             </BlockStyle>
             <BlockStyle>
                 contato
-                <a href="https://wa.link/sc5w9c" >whatsaap </a>
+                <a href="https://wa.me/21970124125?text=hello word , from blue bird" >whatsaap </a>
             </BlockStyle>
         </PageStyle>
     )
