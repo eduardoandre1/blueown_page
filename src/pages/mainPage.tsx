@@ -1,22 +1,22 @@
+import {LinkImg,ContactLogo } from "../styles/contact_logo";
 import BlockStyle from "../styles/context_block";
 import PageStyle from "../styles/display_page";
+import whatsaap from "../assets/whatsapp-svgrepo-com.svg"
+import ContactsBlock from "./blocks/contacts";
 
 export default function MainPage(){
     return (
         <PageStyle>
             <BlockStyle>
-                inicio
+                <h2>inicio</h2>
             </BlockStyle>
             <BlockStyle>
-                sobre 
+                <h2>sobre</h2> 
             </BlockStyle>
             <BlockStyle>
-                serviços 
+                <h2>serviços</h2>
             </BlockStyle>
-            <BlockStyle>
-                contato
-                <a href="https://wa.me/21970124125?text=hello word , from blue bird" >whatsaap </a>
-            </BlockStyle>
+            <ContactsBlock />
         </PageStyle>
     )
 }
