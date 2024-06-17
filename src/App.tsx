@@ -1,12 +1,12 @@
 import MainPage from "./pages/mainPage"
-import GlobalStyle from "./styles/globalStyle"
+import Resetcss from "./utils/resetCSS"
 
 
 function App() {
 
   return (
     <>
-      <GlobalStyle />
+      <Resetcss />
       <MainPage />
     </>
   )
