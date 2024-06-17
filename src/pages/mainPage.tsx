@@ -1,7 +1,5 @@
-import {LinkImg,ContactLogo } from "../styles/contact_logo";
 import BlockStyle from "../styles/context_block";
 import PageStyle from "../styles/display_page";
-import whatsaap from "../assets/whatsapp-svgrepo-com.svg"
 import ContactsBlock from "./blocks/contacts";
 
 export default function MainPage(){
