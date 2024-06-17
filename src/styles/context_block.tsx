@@ -14,7 +14,7 @@ h2{
     align-items: center;
     color :orange;
     text-align: center;
-    font-size: 5dvw;
+    font-size: 5rem;
 }
 `
 export default BlockStyle
