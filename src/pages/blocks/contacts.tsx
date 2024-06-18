@@ -1,6 +1,7 @@
+import styled from "styled-components";
 import BlockStyle from "../../styles/context_block";
 import whatsaap from "../../assets/whatsapp-svgrepo-com.svg"
-import styled from "styled-components";
+
 import linkedin from "../../assets/linkedin-svgrepo-com.svg"
 import instagram from "../../assets/instagram-svgrepo-com.svg"
 
