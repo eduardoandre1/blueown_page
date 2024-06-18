@@ -1,5 +1,6 @@
-import Resetcss from "./utils/resetCSS"
 import MainPage from "./pages/mainPage"
+import Resetcss from "./utils/resetCSS"
+
 
 
 

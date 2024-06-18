@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import BlockStyle from "../../styles/context_block";
-import whatsaap from "../../assets/whatsapp-svgrepo-com.svg"
+import whatsaap from "../../../src/assets/whatsapp-svgrepo-com.svg";
 
-import linkedin from "../../assets/linkedin-svgrepo-com.svg"
-import instagram from "../../assets/instagram-svgrepo-com.svg"
+import linkedin from "../../../src/assets/linkedin-svgrepo-com.svg";
+import instagram from "../../../src/assets/instagram-svgrepo-com.svg";
 
 function ContactsBlock(){
     return(
