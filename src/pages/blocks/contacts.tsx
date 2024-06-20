@@ -4,30 +4,45 @@ import whatsaap from "../../../src/assets/whatsapp-svgrepo-com.svg";
 
 import linkedin from "../../../src/assets/linkedin-svgrepo-com.svg";
 import instagram from "../../../src/assets/instagram-svgrepo-com.svg";
+import telephone from "../../../src/assets/telephone-svgrepo-com.svg";
 
 function ContactsBlock(){
     return(
     <BlockStyle>
         <h2> contatos </h2>
-        <LinkAndMap>
-                <a href="https://wa.link/qedlgf"><img src={whatsaap} /></a>
-                <a href="https://www.linkedin.com/in/blueowl-publicidade-8033a5285/"><img src={linkedin}/></a>
-                <a href="https://www.instagram.com/eduardoandre418/"><img src={instagram}/></a>
-        </LinkAndMap>
-        <LinkAndMap>
-            
-        </LinkAndMap>
+        <DivBlock>
+            <SubBlock>
+                    <a href="https://wa.link/qedlgf"><img src={whatsaap} /></a>
+                    <a href="https://www.linkedin.com/in/blueowl-publicidade-8033a5285/"><img src={linkedin}/></a>
+                    <a href="https://www.instagram.com/eduardoandre418/"><img src={instagram}/></a>
+                    <a href="tel:+5521970124125"><img  src={telephone} /></a>
+            </SubBlock>
+            <SubBlock>
+                <form>
+                    <label for="fname">nome </label>
+                    <input type="text" />
+                    <label for="fname">email </label>
+                    <input type="email" />
+                </form>
+            </SubBlock>
+        </DivBlock>
     </BlockStyle>
     ) 
     
 }
-const LinkAndMap = styled.div`
-
+const DivBlock = styled.div`
 display: flex;
 flex-direction: row;
-width: 50dvw;
+
+`
+const SubBlock = styled.div`
+
+display: flex;
+flex-direction: column;
+width: 50%;
 height: 400px;
 flex-wrap: nowrap;
+border: 2px solid red;
 img{
     all: unset;
     height: 25px ;
@@ -39,12 +54,19 @@ a{
     all: unset;
 }
 img:hover{
-    height: 40px;
-    width: 40px;
+    transform: scale(1.3);
     background-color: whitesmoke;
 }
 @media (min-width: 768px) {
     width:100%};
+`
+
+const Formulario = styled.div`
+display: flex;
+flex-direction: row;
+width: 50dvw;
+height: max-content;
+flex-wrap: nowrap;
 `
 
 export default ContactsBlock;

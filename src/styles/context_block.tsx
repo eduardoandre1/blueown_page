@@ -7,14 +7,16 @@ height: min-content;
 display: flex;
 flex-direction: column;
 border: 2px solid black;
-background-color: #007fff;
+background-color: white;
 h2{
-    width: 100%;
+    width: 100dvw;
     justify-content: center;
     align-items: center;
     color :orange;
     text-align: center;
     font-size: 30px;
+    background-color: white
 }
+
 `
 export default BlockStyle
