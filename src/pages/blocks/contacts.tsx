@@ -19,9 +19,9 @@ function ContactsBlock(){
             </SubBlock>
             <SubBlock>
                 <form>
-                    <label for="fname">nome </label>
+                    <label >nome </label>
                     <input type="text" />
-                    <label for="fname">email </label>
+                    <label >email </label>
                     <input type="email" />
                 </form>
             </SubBlock>
@@ -59,14 +59,6 @@ img:hover{
 }
 @media (min-width: 768px) {
     width:100%};
-`
-
-const Formulario = styled.div`
-display: flex;
-flex-direction: row;
-width: 50dvw;
-height: max-content;
-flex-wrap: nowrap;
 `
 
 export default ContactsBlock;
