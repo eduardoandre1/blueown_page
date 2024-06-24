@@ -9,23 +9,12 @@ import telephone from "../../../src/assets/telephone-svgrepo-com.svg";
 function ContactsBlock(){
     return(
     <BlockStyle>
-        <h2> contatos </h2>
-        <DivBlock>
             <SubBlock>
                     <a href="https://wa.link/qedlgf"><img src={whatsaap} /></a>
                     <a href="https://www.linkedin.com/in/blueowl-publicidade-8033a5285/"><img src={linkedin}/></a>
                     <a href="https://www.instagram.com/eduardoandre418/"><img src={instagram}/></a>
                     <a href="tel:+5521970124125"><img  src={telephone} /></a>
             </SubBlock>
-            <SubBlock>
-                <form>
-                    <label >nome </label>
-                    <input type="text" />
-                    <label >email </label>
-                    <input type="email" />
-                </form>
-            </SubBlock>
-        </DivBlock>
     </BlockStyle>
     ) 
     
