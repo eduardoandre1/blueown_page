@@ -2,7 +2,6 @@ import { useState } from "react";
 import logo from "../../assets/logo.jpeg"
 import MenuStyle from "../../styles/menu/menuStyle"
 export default  function Menu(){
-    const [menuOpen,SetMenuOpem] = useState(true)
     return (
         <MenuStyle>
             <nav>

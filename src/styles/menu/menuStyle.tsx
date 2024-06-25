@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 const MenuStyle = styled.header`
 
-width: 100%;
+width: 100dvw;
 background-color: #0448C5;
-position: relative;
+position: sticky;
 border-bottom: 8px solid #BAE9FD;
 border-top: 8px solid #BAE9FD;
+top: 0px;
+ z-index: 5;
 .logo{
     display: flex;
     flex-direction: row;
@@ -17,7 +19,7 @@ h1{
     display: flex;
     text-align: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 2rem;
     color: #B1E3FC;
     height: 70px;
 }
@@ -40,7 +42,6 @@ nav {
   max-width: 90dvw;
   margin: 0 auto;
   padding: 16px;
-  
 }
 
 .navbar-links {

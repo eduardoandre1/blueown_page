@@ -6,16 +6,16 @@ min-height: (10%-2px);
 height: min-content;
 display: flex;
 flex-direction: column;
-border: 2px solid black;
-background-color: white;
+margin-top: 15px;
 h2{
     width: 100%;
     justify-content: center;
     align-items: center;
-    color :orange;
+    color: #B1E3FC;
     text-align: center;
     font-size: 30px;
-    background-color: white
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 `

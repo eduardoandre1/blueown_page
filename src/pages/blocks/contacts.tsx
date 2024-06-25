@@ -19,19 +19,18 @@ function ContactsBlock(){
     ) 
     
 }
-const DivBlock = styled.div`
-display: flex;
-flex-direction: row;
-
-`
 const SubBlock = styled.div`
 
 display: flex;
-flex-direction: column;
-width: 50%;
-height: 400px;
-flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-evenly;
+width: 100%;
+height: 70px;
+align-content: center;
+align-items: center;
 border: 2px solid red;
+background-color: #BAE9FD;
+border: 2px solid white;
 img{
     all: unset;
     height: 25px ;
@@ -47,7 +46,14 @@ img:hover{
     background-color: whitesmoke;
 }
 @media (min-width: 768px) {
+    height: 32px;
     width:100%};
+    bottom: 0;
+    left: 0;
+@media (max-width: 768px){
+    position: absolute;
+
+}
 `
 
 export default ContactsBlock;

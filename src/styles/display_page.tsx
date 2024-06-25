@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const PageStyle = styled.div`
 width: 100dvw;
-background-color: #141618;
+background-color: #0B0051;
 color: black;
 display: flex;
 flex-direction: column;
