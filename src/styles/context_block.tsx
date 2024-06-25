@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 const BlockStyle = styled.div`
 width: 80%;
-min-height: (10%-2px);
-height: min-content;
+height: calc(100dvh - 86px);
 display: flex;
 flex-direction: column;
 margin-top: 15px;

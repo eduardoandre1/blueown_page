@@ -19,7 +19,7 @@ export default  function Menu(){
                 
                 <ol className={navbar}>
                     <li>
-                        <a>
+                        <a href="/">
                         inicio
                         </a>
                     </li>
@@ -33,7 +33,7 @@ export default  function Menu(){
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="/contatos">
                         contatos
                         </a>
                     </li>

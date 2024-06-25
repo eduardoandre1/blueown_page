@@ -2,6 +2,7 @@ import { useState } from "react";
 import EmailBlock from "../../styles/emailForm/emailFormStyle";
 import axios from "axios";
 import BlockStyle from "../../styles/context_block";
+import Swal from 'sweetalert2'
 
 
 function EmailFormer(){
@@ -14,9 +15,9 @@ function EmailFormer(){
             <h2>
                 Gostou , nos envie um email
             </h2>
-            <form onSubmit={async ()=> await axios.post('https://blueowl-em-jsvanilla-1.onrender.com/confirmation',{name:name,email:email,message:message})
-            .then(()=>alert('foi'))
-            .catch(()=>alert('não foi'))
+            <form onSubmit={ ()=> axios.post('https://blueowl-em-jsvanilla-1.onrender.com/confirmation',[{name:name,email:email,message:message}])
+            .then(alert('success'))
+            .catch(alert('não foi'))
             }>
                 <input type="text" name="name" placeholder="seu nome" value={name} onChange={(e)=>setName(e.target.value)}/>
                 <input type="text" name="email" placeholder="name@example.com" value={email} onChange={(e)=>setEmail(e.target.value)}/>

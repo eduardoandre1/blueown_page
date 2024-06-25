@@ -23,7 +23,8 @@
     "react-bootstrap": "^2.10.3",
     "react-dom": "^18.2.0",
     "reset.css": "^2.0.2",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "sweetalert2": "^11.12.0"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.10",

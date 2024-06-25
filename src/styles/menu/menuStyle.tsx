@@ -13,12 +13,9 @@ top: 0px;
     display: flex;
     flex-direction: row;
     gap: 2dvw;
-    z-index: 3;
 }
 h1{
-    display: flex;
-    text-align: center;
-    align-items: center;
+    
     font-size: 2rem;
     color: #B1E3FC;
     height: 70px;
@@ -90,7 +87,7 @@ li a {
     opacity: 1;
     top: 100%;
     transform: translateY(0);
-    z-index: 0;
+    z-index: 1;
     margin-top: 8px;
   }
 
