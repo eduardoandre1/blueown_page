@@ -1,7 +1,6 @@
 import { useState } from "react";
 import EmailBlock from "../../styles/emailForm/emailFormStyle";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import BlockStyle from "../../styles/context_block";
 
 
@@ -9,7 +8,6 @@ function EmailFormer(){
     const [name,setName] = useState('')
     const [email,setEmail] = useState('')
     const [message,setMessage] = useState('')
-    const navigate = useNavigate()
     return(
     <BlockStyle>
         <EmailBlock>
