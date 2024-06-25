@@ -11,8 +11,8 @@ export default function MainPage(){
             <Menu />
             <BrowserRouter>
              <Routes>
-                <Route path="/" element={ <CarosselBlock />} />
-                <Route path="/contatos" element={ <EmailFormer />} />
+                <Route path="/carrosel" element={ <CarosselBlock />} />
+                <Route path="/" element={ <EmailFormer />} />
              </Routes>
             </BrowserRouter>
             <ContactsBlock />
