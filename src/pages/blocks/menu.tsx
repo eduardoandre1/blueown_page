@@ -24,11 +24,11 @@ export default  function Menu(){
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="/sobre">
                         sobre
                         </a>
                     </li><li>
-                        <a>
+                        <a href="/serviços">
                         serviços
                         </a>
                     </li>

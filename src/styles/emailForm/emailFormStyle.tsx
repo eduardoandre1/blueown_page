@@ -6,7 +6,7 @@ import styled from "styled-components";
  flex-direction: column;
  align-items: center;
 
-form{
+div{
   max-width: 600px;
   width: 100%;
   display: flex;

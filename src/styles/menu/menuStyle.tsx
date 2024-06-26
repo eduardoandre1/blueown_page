@@ -3,10 +3,10 @@ import styled from "styled-components";
 const MenuStyle = styled.header`
 
 width: 100dvw;
-background-color: #0448C5;
+background: linear-gradient(to top, #0448C5, #BAE9FD);
 position: sticky;
-border-bottom: 8px solid #BAE9FD;
-border-top: 8px solid #BAE9FD;
+border-bottom: 8px solid #0448C5;
+border-top: 8px transparent ;
 top: 0px;
  z-index: 5;
 .logo{
@@ -15,9 +15,11 @@ top: 0px;
     gap: 2dvw;
 }
 h1{
-    
-    font-size: 2rem;
-    color: #B1E3FC;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    color:  #0448C5;
     height: 70px;
 }
 img{
@@ -87,7 +89,7 @@ li a {
     opacity: 1;
     top: 100%;
     transform: translateY(0);
-    z-index: 1;
+    z-index: 0;
     margin-top: 8px;
   }
 

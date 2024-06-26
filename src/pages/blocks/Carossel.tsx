@@ -1,12 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 import logo  from '../../assets/logo.jpeg'
 import CarosselStyle from '../../styles/carrossel/carosselStyle';
+import AboutPage from './AboutPage';
 function CarosselBlock() {
   return (
     <Carousel>
       <Carousel.Item >
         <CarosselStyle>
-            <img src={logo} alt="" />
+            <AboutPage />
         </CarosselStyle>
         <Carousel.Caption>
           <h3>First slide label</h3>

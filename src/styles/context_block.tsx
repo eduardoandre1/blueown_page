@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 const BlockStyle = styled.div`
 width: 80%;
-height: calc(100dvh - 86px);
+height: calc(100dvh - 200px);
 display: flex;
 flex-direction: column;
 margin-top: 15px;
+background-color: #B1E3FC;
 h2{
     width: 100%;
     justify-content: center;
