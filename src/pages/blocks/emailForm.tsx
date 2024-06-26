@@ -10,7 +10,6 @@ function EmailFormer(){
     const [name,setName] = useState('')
     const [email,setEmail] = useState('')
     const [message,setMessage] = useState('')
-    const Api = 'https://blueowl-em-jsvanilla-1.onrender.com/confirmation '
     function emailSender(name: string, message: string, email: string){ 
         const data = {name:name, message:message, email:email}
         axios.post('https://blueowl-em-jsvanilla-1.onrender.com/confirmation',data)
