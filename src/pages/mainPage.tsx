@@ -8,17 +8,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function MainPage(){
     return (
-        <PageStyle>
-            <Menu />
             <BrowserRouter>
-             <Routes>
-                <Route path="/" index element={ <CarosselBlock />} />
-                <Route path="/contatos" element={ <EmailFormer />} />
-                <Route path="/sobre" element={<AboutPage /> } />
-                <Route path="/serviços" element={<h1> serviços</h1>} />
-             </Routes>
+                <PageStyle>
+                    <Menu />
+                        <Routes>
+                        <Route path="/" index element={ <CarosselBlock />} />
+                        <Route path="/contatos" element={ <EmailFormer />} />
+                        <Route path="/sobre" element={<AboutPage /> } />
+                        <Route path="/serviços" element={<h1> serviços</h1>} />
+                        </Routes>
+                    <ContactsBlock />
+                </PageStyle>
             </BrowserRouter>
-            <ContactsBlock />
-        </PageStyle>
     )
 }

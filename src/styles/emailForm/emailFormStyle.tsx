@@ -5,8 +5,10 @@ import styled from "styled-components";
  display: flex;
  flex-direction: column;
  align-items: center;
-
-div{
+h2{
+  color: blue
+}
+.formMold{
   max-width: 600px;
   width: 100%;
   display: flex;
@@ -22,6 +24,17 @@ input{
   background-color: #BAE9FD;
   color: #0448C5;
   }
+button {
+  all: unset;
+  margin-bottom: 14px;
+  height: 34px;
+  border-radius: 4px;
+  border: 0;
+  padding: 0 8px;
+  border: 1px solid blueviolet;
+  background-color: #BAE9FD;
+  color: #0448C5;
+}
 textarea{
   background-color: #BAE9FD;
   color: #0448C5;

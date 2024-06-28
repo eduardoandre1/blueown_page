@@ -12,13 +12,17 @@ function EmailFormer(){
     const [message,setMessage] = useState('')
     function emailSender(name: string, message: string, email: string){ 
         const data = {name:name, message:message, email:email}
-        axios.post('https://blueowl-em-jsvanilla-1.onrender.com/confirmation',data)
-        .then(()=>Swal.fire({position: "top",
+        axios.post('http://localhost:5000/confirmation',data)
+        .then(()=>Swal.fire({position: "center",
             icon: "success",
             title: "sua duvida foi enviada",
             showConfirmButton: false,
-            timer: 1500}))
-        .catch(()=>alert('error'))
+            timer: 1500
+            }))
+        .catch((error)=>{Swal.fire({title: "erro no servidor",
+            icon:"error",
+
+        })})
     }
     return(
     <BlockStyle>
@@ -26,12 +30,19 @@ function EmailFormer(){
             <h2>
                 Gostou , nos envie um email
             </h2>
-            <div>
+            <div className="formMold">
+                <label> Nome:</label>
                 <input type="text" name="name" placeholder="seu nome" value={name} onChange={(e)=>setName(e.target.value)}/>
+                <label>email:</label>
                 <input type="text" name="email" placeholder="name@example.com" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                <label>mensagem:</label>
                 <textarea name="message" placeholder="Qual a sua duvida?" value={message} onChange={(e)=>setMessage(e.target.value)}/>
-                <button onClick={()=>{emailSender(name,message,email)}}>enviar</button>
-
+                <button onClick={()=>{Swal.fire({
+                    position: 'bottom-end',
+                    title: "sua duvida foi enviada",
+                    timer: 1500,
+                    icon:'warning'
+            })}}> Enviar </button>
             </div>
         </EmailBlock>
     </BlockStyle>)

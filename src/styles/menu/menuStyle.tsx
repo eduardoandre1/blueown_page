@@ -4,11 +4,11 @@ const MenuStyle = styled.header`
 
 width: 100dvw;
 background: linear-gradient(to top, #0448C5, #BAE9FD);
-position: sticky;
+position: fixed   ;
 border-bottom: 8px solid #0448C5;
 border-top: 8px transparent ;
 top: 0px;
- z-index: 5;
+z-index: 1;
 .logo{
     display: flex;
     flex-direction: row;
@@ -33,7 +33,7 @@ img:hover{
     transform: scale(1.2);
     border: 2px solid white;
 }
-nav {
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +60,8 @@ li:hover {
   color: #FFFFFD;
 }
 
-li a {
+li a{
+  all: unset;
   padding: 8px;
 }
 @media (min-width: 960px) {

@@ -7,6 +7,7 @@ display: flex;
 flex-direction: column;
 margin-top: 15px;
 background-color: #B1E3FC;
+margin-top:120px;
 h2{
     width: 100%;
     justify-content: center;

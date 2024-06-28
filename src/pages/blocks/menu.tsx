@@ -1,6 +1,9 @@
 import { useState } from "react"
 import logo from "../../assets/logo.jpeg"
 import MenuStyle from "../../styles/menu/menuStyle"
+import {Link} from "react-router-dom"
+
+
 export default  function Menu(){
     const [navbar,setNavbar] = useState("navbar-links")
     const [mobileMenu,setMobileMenu] = useState("mobile-button")
@@ -11,7 +14,7 @@ export default  function Menu(){
 
     return (
         <MenuStyle>
-            <nav>
+            <div className="menu">
                 <div className="logo">
                 <img  src={logo}/>
                 <h1> Blueowl Publicidade</h1>
@@ -19,23 +22,23 @@ export default  function Menu(){
                 
                 <ol className={navbar}>
                     <li>
-                        <a href="/">
+                        <Link to={'/'}>
                         inicio
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/sobre">
+                        <Link to={"/sobre"}>
                         sobre
-                        </a>
+                        </Link>
                     </li><li>
-                        <a href="/serviços">
+                        <Link to={"/serviços"}>
                         serviços
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/contatos">
+                        <Link to={"/contatos"}>
                         contatos
-                        </a>
+                        </Link>
                     </li>
                 </ol>
                 <div className={mobileMenu} onClick={()=>{
@@ -45,7 +48,7 @@ export default  function Menu(){
                     <div className="mobile-button-line"></div>
                     <div className="mobile-button-line"></div>
                 </div>
-            </nav>
+            </div>
         </MenuStyle>
     )
 }
