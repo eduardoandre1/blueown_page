@@ -21,8 +21,7 @@ function EmailFormer(){
             }))
         .catch((error)=>{Swal.fire({title: "erro no servidor",
             icon:"error",
-
-        })})
+        });console.log(error)})
     }
     return(
     <BlockStyle>
@@ -37,12 +36,7 @@ function EmailFormer(){
                 <input type="text" name="email" placeholder="name@example.com" value={email} onChange={(e)=>setEmail(e.target.value)}/>
                 <label>mensagem:</label>
                 <textarea name="message" placeholder="Qual a sua duvida?" value={message} onChange={(e)=>setMessage(e.target.value)}/>
-                <button onClick={()=>{Swal.fire({
-                    position: 'bottom-end',
-                    title: "sua duvida foi enviada",
-                    timer: 1500,
-                    icon:'warning'
-            })}}> Enviar </button>
+                <button onClick={()=>{emailSender(name,message,email)}}> Enviar </button>
             </div>
         </EmailBlock>
     </BlockStyle>)
