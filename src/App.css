@@ -1,4 +1,5 @@
 @import "reset.css";
+@import 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -43,4 +44,25 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+::-webkit-scrollbar{
+    background: white;
+    width: 25px;
+    border-radius: 7px;
+    height: 95%;
+}
+::-webkit-scrollbar-thumb{
+   
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    border-radius: 7px;
+    background-color: #BAE9FD;
+}
+::-webkit-scrollbar-thumb:hover{
+    padding: 1px;
+    border: 1px solid gray;
+}
+::-webkit-scrollbar-button{
+    display: none;
 }

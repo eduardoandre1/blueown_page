@@ -15,9 +15,16 @@ h2{
     align-items: center;
     color: #B1E3FC;
     text-align: center;
-    font-size: 30px;
+    font-size: 60px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
+}
+::-webkit-scrollbar{
+    background: red;
+    width: 60px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #0549C6;
 }
 
 `
