@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const BlockStyle = styled.div`
 width: 80%;
-height: calc(90dvh - 100px);
+height: calc(90dvh - 90px);
 display: flex;
 flex-direction: column;
 margin-top: 15px;
@@ -17,7 +17,8 @@ h2{
     text-align: center;
     font-size: 60px;
     margin-top: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    height: 70px;
 }
 ::-webkit-scrollbar{
     background: red;

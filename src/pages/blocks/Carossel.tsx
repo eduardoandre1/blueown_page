@@ -1,30 +1,31 @@
 import Carousel from 'react-bootstrap/Carousel';
 import logo  from '../../assets/logo.jpeg'
 import CarosselStyle from '../../styles/carrossel/carosselStyle';
-import AboutPage from './AboutPage';
+import BlockStyle from '../../styles/context_block';
+import aviso  from "../../../public/Aviso de promoção loja moderno rose instagram story.png"
+import noticia from "../../../public/Promoção Leve Pague Post para Instagram Amarelo e Preto.jpg"
 function CarosselBlock() {
   return (
-    <Carousel>
+    <BlockStyle>
+      <Carousel>
       <Carousel.Item >
         <CarosselStyle>
-            <AboutPage />
-        </CarosselStyle>
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      
-      <Carousel.Item >
-      <CarosselStyle>
-            <img src={logo} alt="" />
+            <img src={noticia} alt="" />
         </CarosselStyle>
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      
+      <Carousel.Item >
+        <CarosselStyle>
+            <img src={aviso} alt="" />
+        </CarosselStyle>
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
       <Carousel.Item>
       <CarosselStyle>
             <img src={logo} alt="" />
@@ -37,6 +38,8 @@ function CarosselBlock() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </BlockStyle>
+    
   );
 }
 

@@ -8,6 +8,7 @@ height: 100%;
 align-content: center;
 align-self: center;
 align-items: center;
+margin-bottom: 15px;
 
 img{
     height: 100%;
@@ -22,7 +23,7 @@ h2{
     z-index: 2;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 60px;
-    margin-bottom: 35px;
+    margin-bottom: 90px;
 }
 li {
     gap: 10px;
@@ -49,8 +50,8 @@ ol{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height:600px;
-    margin-bottom: 15px;
+    height:650px;
+    padding-bottom: 20px;
 
 }
 div {
