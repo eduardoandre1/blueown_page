@@ -20,7 +20,6 @@ h2{
     color: white;
     width: 100%;
     height: 50px;
-    z-index: 2;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 60px;
     margin-bottom: 90px;
@@ -44,6 +43,10 @@ li b{
     text-decoration-line: underline;
     text-shadow: 15px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
 }
 ol{
     gap: 10px;

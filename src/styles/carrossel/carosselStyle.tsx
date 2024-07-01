@@ -2,7 +2,6 @@ import styled from "styled-components";
 const CarosselStyle = styled.div`
 height: 100%;
 width: 100%;
-background: ;
 background-size: cover;
 display: flex;
 align-items: center;
