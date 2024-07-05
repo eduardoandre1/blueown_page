@@ -6,19 +6,23 @@ import Swal from "sweetalert2";
 
 
 
-function EmailFormer(){
+export default function EmailFormer(){
     const [name,setName] = useState('')
     const [email,setEmail] = useState('')
     const [message,setMessage] = useState('')
     function emailSender(name: string, message: string, email: string){ 
         const data = {name:name, message:message, email:email}
-        axios.post('http://localhost:5000/confirmation',data)
-        .then(()=>Swal.fire({position: "center",
+        axios.post(import.meta.env.VITE_API,data)
+        .then(()=>{Swal.fire({position: "center",
             icon: "success",
             title: "sua duvida foi enviada",
             showConfirmButton: false,
             timer: 1500
-            }))
+                            }
+                        );
+                        console.log('foi')
+                    }
+            )
         .catch((error)=>{Swal.fire({title: "erro no servidor",
             icon:"error",
         });console.log(error)})
@@ -39,8 +43,6 @@ function EmailFormer(){
                 <button onClick={()=>{emailSender(name,message,email)}}> Enviar </button>
             </div>
         </EmailBlock>
-    </BlockStyle>)
+    </BlockStyle>
+    )
 }
-
-export default EmailFormer
-
