@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import BlockStyle from "../styles/context_block"
 import FormSubmit from "./emails/formSubmit"
-import MapBlock from "./blocks/map"
+import MapBlock from "./blocks/"
 export default function ContactPage(){
     return (
         <BlockStyle>
@@ -24,7 +24,6 @@ const ContactPageStyle = styled.div`
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 560px;
     grid-gap: 15px;
-    overflow: hidden;
     .block {
     }
     .emailBlockStyle{
