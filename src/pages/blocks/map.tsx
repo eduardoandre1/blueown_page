@@ -49,7 +49,7 @@ grid-gap: 15px;
             width: 100%;
             height: 100%;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             font-size:25px;
             color: white;
             
