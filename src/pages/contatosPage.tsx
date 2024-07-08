@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import BlockStyle from "../styles/context_block"
 import FormSubmit from "./emails/formSubmit"
-import MapBlock from "./blocks/"
+import MapBlock from "./blocks/map"
 export default function ContactPage(){
     return (
         <BlockStyle>
