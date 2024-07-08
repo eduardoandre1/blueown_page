@@ -5,6 +5,7 @@ import ContactsBlock from "./blocks/contacts";
 import EmailFormer from "./blocks/emailForm";
 import Menu from "./blocks/menu";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ContactPage from "./contatosPage";
 
 export default function MainPage(){
     return (
@@ -13,7 +14,7 @@ export default function MainPage(){
                     <Menu />
                         <Routes>
                         <Route path="/" index element={ <CarosselBlock />} />
-                        <Route path="/contatos" element={ <EmailFormer />} />
+                        <Route path="/contatos" element={ <ContactPage />} />
                         <Route path="/sobre" element={<AboutPage /> } />
                         <Route path="/serviços" element={<h1> serviços</h1>} />
                         </Routes>

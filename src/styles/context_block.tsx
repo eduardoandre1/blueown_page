@@ -5,6 +5,7 @@ width: 80%;
 height: calc(90dvh - 90px);
 display: flex;
 flex-direction: column;
+align-items: center;
 margin-top: 15px;
 background-color: #0549C6;
 margin-top:120px;

@@ -20,7 +20,7 @@ export default function EmailFormer(){
             timer: 1500
                             }
                         );
-                        console.log('foi')
+                        console.log('foi'  )
                     }
             )
         .catch((error)=>{Swal.fire({title: "erro no servidor",
