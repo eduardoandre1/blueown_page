@@ -45,6 +45,7 @@ grid-gap: 15px;
  display: grid;
  grid-template-columns: repeat(3, 1fr);
         a{
+            all:unset;
             display: flex;
             width: 100%;
             height: 100%;
