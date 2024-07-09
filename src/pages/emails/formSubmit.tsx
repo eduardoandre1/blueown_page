@@ -1,18 +1,19 @@
-//import { useState } from "react"
+import { useState } from "react"
 import styled from "styled-components"
+import emailNodeMailSender from "./nodesMailer"
 function FormSubmit(){
-    // const [name, setName] = useState('')
-    //const [email, setEmail] = useState('')
-    //const [message, setMessage] = useState('')
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
     return(
         <form target="_blank" action="https://formsubmit.co/6405334ddcbb2d8e208b506c1a5a1e62" method="POST">
             <FormStyle>
                 <h2 className="titulo" >Entre em contato Conosco</h2>
-                <input className="border-radios" type="text" name="name" placeholder="Seu Nome" required></input>
-                <input className="border-radios" type="email" name="email"  placeholder="Seu melhor email" required></input>
+                <input className="border-radios" type="text" name="name" placeholder="Seu Nome" value={name} required onChange={(event)=>{setName(event.target.value)}}></input>
+                <input className="border-radios" type="email" name="email"  placeholder="Seu melhor email" value={email} onChange={(event)=>{setEmail(event.target.value)}} required></input>
                 <input type="hidden" name="_autoresponse" value="your custom message"></input>
-                <textarea className="textarea border-radios" placeholder="Sua duvida ou apenas o seu Bom dia "  name="message" required></textarea>
-                <button className="border-radios" type="submit" >enviar</button>
+                <textarea className="textarea border-radios" placeholder="duvidas , orçamentos ou primeiro contato  "  name="message" value={message} onChange={(event)=>{setMessage(event.target.value)}} required></textarea>
+                <button className="border-radios" type="submit" onSubmit={()=>{emailNodeMailSender({name:name,email:email,message:message})}}>enviar</button>
                 <div></div>
 
             </FormStyle>
@@ -34,8 +35,10 @@ const FormStyle = styled.div`
  .textarea{
     grid-row: 5 / 7;
     grid-column: 1;
+    padding: 10px;
  }
  .border-radios{
     border-radius: 15px;
+    padding: 10px;
  }
 `
