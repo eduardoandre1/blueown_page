@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 const MenuStyle = styled.header`
 
-width: 100dvw;
+width: 110dvw ;
 background: black;
-position: relative;
+position: fixed;
+z-index: 15;
 h1{
     display: flex;
     text-align: center;
     align-items: center;
-    font-size: 2em;
+    font-size: clamp(1px, 5px + 2vw, 2em);
     color:  #0448C5;
 }
 

@@ -5,13 +5,13 @@ import linkedin from "../../../src/assets/linkedin.svg";
 import instagram from "../../../src/assets/instagram.svg";
 import telephone from "../../../src/assets/telephone-svgrepo-com.svg";
 
-function ContactsBlock(){
+function FooterBlock(){
     return(
             <SubBlock>
-                    <a href="https://wa.link/qedlgf"><img src={whatsaap} /><h4>+55 (21)97012-4125</h4></a>
+                    <a href="https://wa.link/qedlgf"><img src={whatsaap} /><h4>+55(21)97012-4125</h4></a>
                     <a href="https://www.linkedin.com/in/blueowl-publicidade-8033a5285/"><img src={linkedin}/><h4>linkedin</h4></a>
                     <a href="https://www.instagram.com/eduardoandre418/"><img src={instagram}/>  <h4>@eduardo</h4></a>
-                    <a href="tel:+5521970124125"><img  src={telephone} /><h4>+55 (21)97012-4125</h4></a>
+                    <a href="tel:+5521970124125"><img  src={telephone} /><h4>+55(21)97012-4125</h4></a>
             </SubBlock>
     ) 
     
@@ -30,6 +30,7 @@ background-color: black;
 position: fixed;
 bottom: 0;
 left: 0;
+z-index: 15;
 img{
     all: unset;
     height: 20px ;
@@ -45,9 +46,9 @@ a{
     gap: 2px;
     align-items: center;
 }
-a h4 {
+h4 {
     color:  white;
-    font-size: 1em;
+    font-size: clamp(1px, 1px + 2vw, 1em); ;
     padding: 2px;
     height: 30px;
     display: flex;
@@ -55,7 +56,6 @@ a h4 {
     align-items: center;
 }
 h4:hover{
-    font-size:small;;
     color: white,
 }
 a:hover{
@@ -71,11 +71,8 @@ a:hover{
         height: 24px;
         width: 24px;
     }
-    a h4{
-        display: none;
-    }
 }
 
 `
 
-export default ContactsBlock;
+export default FooterBlock;

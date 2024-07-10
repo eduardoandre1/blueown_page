@@ -1,7 +1,7 @@
 import PageStyle from "../styles/display_page";
 import AboutPage from "./AboutPage";
 import CarosselBlock from "./blocks/Carossel";
-import ContactsBlock from "./blocks/contacts";
+import FooterBlock from "./blocks/footer";
 import Menu from "./blocks/menu";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactPage from "./contatosPage";
@@ -18,7 +18,7 @@ export default function MainPage(){
                         <Route path="/sobre" element={<AboutPage /> } />
                         <Route path="/serviços" element={<APT />} />
                         </Routes>
-                    <ContactsBlock />
+                    <FooterBlock />
                 </PageStyle>
             </BrowserRouter>
     )
