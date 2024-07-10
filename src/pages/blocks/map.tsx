@@ -42,8 +42,10 @@ grid-gap: 15px;
  .redeLinks {
  grid-row: 2;
  width: 100%;
- display: grid;
- grid-template-columns: repeat(3, 1fr);
+ display: flex;
+ grid-template-columns: repeat(3, 30%);
+ align-items: center;
+ justify-content: center;
         a{
             all:unset;
             display: flex;
@@ -51,7 +53,7 @@ grid-gap: 15px;
             height: 100%;
             align-items: center;
             justify-content: center;
-            font-size:25px;
+            font-size:campl(8px,5px + 2vw , 25px);
             color: white;
             
         }

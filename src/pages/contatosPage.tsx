@@ -1,38 +1,51 @@
 import styled from "styled-components"
-import BlockStyle from "../styles/context_block"
 import FormSubmit from "./emails/formSubmit"
 import MapBlock from "./blocks/map"
 export default function ContactPage(){
     return (
-        <BlockStyle>
-            <ContactPageStyle>
-            <div className="emailBlockStyle">
+    <ContactPageStyle>
+            <div className="block">
+                <div className="subBlock">
                 <FormSubmit />
-            </div>
-            <div className="navigateBlockStyle">
+                </div>
+                <div className="subBlock">
                 <MapBlock />
+                </div>
             </div>
-            </ContactPageStyle>
-        </BlockStyle>
+    </ContactPageStyle>
     )
 }
 
 const ContactPageStyle = styled.div`
-    display: grid;
-    width: 95%;
-    margin: 0 auto;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 560px;
-    grid-gap: 15px;
+    display: flex;
+    width: 100dvw;
+    height: min-content;
+    min-height: 100dvh;
+    padding-top: 100px;
+    padding-bottom: 40px;
     .block {
+        height: 80dvh;
+        width: 100dvw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
-    .emailBlockStyle{
+    .subBlock {
+        width: 50%;
+        height: 100%;
     }
-    .navigateBlockStyle{
-    }
-    @media (max-width: 960px){
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(2,1fr);
+    @media (max-width: 768px){
+        padding-top: 60px;
+        .block{
+            flex-direction: column;
+            height: min-content;
+            justify-content: flex-start;
+        }
+        .subBlock{
+            width: 100%;
+            height: auto;
+        }
     }
 
 `

@@ -48,27 +48,31 @@ table {
     all: unset;
     width: 17px;
     border-radius: 7px;
-    background-color: black;
     height: 95%;
     opacity: 0;
+    background-color: transparent;
+    visibility: hidden;
+    display: none;
 }
 ::-webkit-scrollbar:hover{
-     opacity: 100%;
+     background-color: black;
+     visibility: visible;
 }
 ::-webkit-scrollbar-thumb{
    
     width: 10px;
     height: 10px;
     border-radius: 7px;
-    background-color: darkblue;
+    background-color: transparent;
     visibility: hidden;
 }
-
 ::-webkit-scrollbar-thumb:hover{
     padding: 1px;
     border: 1px solid gray;
+    background-color: darkblue;
     visibility: visible;
 }
 ::-webkit-scrollbar-button{
     display: none;
+
 }

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const BlockStyle = styled.section`
-width: 80%;
+width: 100dvw;
 display: flex;
 min-height: 100dvh;
 flex-direction: column;
 align-items: center;
-margin-top: 15px;
+margin-top: 50px;
 background-color: darkblue;
 overflow-y: scroll;
 h2{
@@ -20,13 +20,7 @@ h2{
     margin-bottom: 40px;
     height: 70px;
 }
-::-webkit-scrollbar{
-    background: red;
-    width: 60px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #0549C6;
-}
+
 
 `
 export default BlockStyle
