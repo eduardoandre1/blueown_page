@@ -1,10 +1,11 @@
 import PageStyle from "../styles/display_page";
-import AboutPage from "./blocks/AboutPage";
+import AboutPage from "./AboutPage";
 import CarosselBlock from "./blocks/Carossel";
 import ContactsBlock from "./blocks/contacts";
 import Menu from "./blocks/menu";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactPage from "./contatosPage";
+import APT from "./AboutPageTurbo";
 
 export default function MainPage(){
     return (
@@ -15,7 +16,7 @@ export default function MainPage(){
                         <Route path="/" index element={ <CarosselBlock />} />
                         <Route path="/contatos" element={ <ContactPage />} />
                         <Route path="/sobre" element={<AboutPage /> } />
-                        <Route path="/serviços" element={<h1> serviços</h1>} />
+                        <Route path="/serviços" element={<APT />} />
                         </Routes>
                     <ContactsBlock />
                 </PageStyle>

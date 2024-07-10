@@ -3,36 +3,16 @@ import styled from "styled-components";
 const MenuStyle = styled.header`
 
 width: 100dvw;
-background: linear-gradient(to top, #0448C5, #BAE9FD);
-position: fixed   ;
-border-bottom: 8px solid #0448C5;
-border-top: 8px transparent ;
-top: 0px;
-z-index: 1;
-.logo{
-    display: flex;
-    flex-direction: row;
-    gap: 2dvw;
-}
+background: black;
+position: relative;
 h1{
     display: flex;
     text-align: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2em;
     color:  #0448C5;
-    height: 70px;
 }
-img{
-    width: 70px;
-    height: 70px;
-    border: 2px solid white;
-    border-radius: 50%;
-    overflow: hidden;
-}
-img:hover{
-    transform: scale(1.2);
-    border: 2px solid white;
-}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -78,7 +58,7 @@ li a{
     right: 0;
 
     flex-direction: column;
-    background-color: #0448C5;;
+    background-color: black;
     box-shadow: rgb(0 0 0 / 75%) 0px 13px 30px -12px;
     gap: 0;
     z-index: -1;
@@ -90,7 +70,7 @@ li a{
     opacity: 1;
     top: 100%;
     transform: translateY(0);
-    z-index: 0;
+    z-index: 3;
     margin-top: 8px;
   }
 

@@ -25,8 +25,7 @@ width: 100dvw;
 height: 30px;
 align-content: center;
 align-items: center;
-background-color: #BAE9FD;
-border: 2px solid white;
+background-color: black;
 
 position: fixed;
 bottom: 0;
@@ -47,8 +46,8 @@ a{
     align-items: center;
 }
 a h4 {
-    color:  #0448C5;
-    font-size: smaller;
+    color:  white;
+    font-size: 1em;
     padding: 2px;
     height: 30px;
     display: flex;
@@ -69,10 +68,14 @@ a:hover{
 @media (max-width: 768px) {
     height: 32px;
     img{
-        height: 12px;
-        width: 12px;
+        height: 24px;
+        width: 24px;
+    }
+    a h4{
+        display: none;
     }
 }
+
 `
 
 export default ContactsBlock;

@@ -1,5 +1,4 @@
 import { useState } from "react"
-import logo from "../../assets/logo.jpeg"
 import MenuStyle from "../../styles/menu/menuStyle"
 import {Link} from "react-router-dom"
 
@@ -16,10 +15,8 @@ export default  function Menu(){
         <MenuStyle>
             <div className="menu">
                 <div className="logo">
-                <img  src={logo}/>
                 <h1> Blueowl Publicidade</h1>
                 </div>
-                
                 <ol className={navbar}>
                     <li>
                         <Link to={'/'}>

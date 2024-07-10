@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
-const BlockStyle = styled.div`
+const BlockStyle = styled.section`
 width: 80%;
-height: calc(90dvh - 90px);
 display: flex;
+min-height: 100dvh;
 flex-direction: column;
 align-items: center;
 margin-top: 15px;
-background-color: #0549C6;
-margin-top:120px;
+background-color: darkblue;
 overflow-y: scroll;
 h2{
     width: 100%;

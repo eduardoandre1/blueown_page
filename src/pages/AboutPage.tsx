@@ -1,8 +1,8 @@
-import BlockStyle from "../../styles/context_block";
-import logo from "../../assets/travel_logo.jpeg"
-import AboutStyle from "../../styles/About/AboutPageStyle";
-import claws from "../../../public/owl_claws.jpeg";
-import eyes from "../../../public/owl_eyes.jpeg";
+import BlockStyle from "../styles/context_block";
+import logo from "../assets/travel_logo.jpeg"
+import AboutStyle from "../styles/About/AboutPageStyle";
+import claws from "../../public/owl_claws.jpeg";
+import eyes from "../../public/owl_eyes.jpeg";
 function AboutPage(){
     return (
     <BlockStyle>
