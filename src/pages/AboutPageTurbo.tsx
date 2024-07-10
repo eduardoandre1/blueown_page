@@ -10,7 +10,12 @@ export default function APT(){
                 <div className="text">
                     <h2>Quem Nos Somos? </h2>
                     <p>Somos uma agência de talentos em Designer, Marketing e Websites prontos para por em prática suas ideias!</p>
-                    <p> dfgfdshgfshf</p>
+                    <h3> nossos ideais </h3>
+                    <ul>
+                        <li>Criação de anúncios e Branding!</li>
+                        <li>Planejamento de Mídia!</li>
+                        <li>Gerenciamento de Campanhas!</li>
+                    </ul>
                 </div>
             </TextAndImage>
         </div>
@@ -74,9 +79,10 @@ padding-bottom: 35px;
 @media(max-width: 768px) {
     .moldBox{
         width: 85dvw;
-        height: 40dvh;
+        height: 30dvh;
         margin: 0 auto;
         margin-top: 15px;
+        
 
     }
     justify-content: flex-start;
@@ -96,7 +102,7 @@ grid-gap: 3%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     color: white;
     h2{
         width: 100%;
@@ -108,7 +114,6 @@ grid-gap: 3%;
     }
     p{
         width: 100%;
-        height: 75%;
         display: flex;
         text-align: start;
         justify-content: flex-end;

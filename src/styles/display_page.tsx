@@ -1,5 +1,4 @@
 import styled from "styled-components";
-//import backgroundImage from "../../public/pexels-felixmittermeier-956999.jpg"
 
 const PageStyle = styled.div`
 width: 100dvw;
