@@ -46,9 +46,9 @@ table {
 }
 ::-webkit-scrollbar{
     all: unset;
-    background: white;
     width: 17px;
     border-radius: 7px;
+    background-color: black;
     height: 95%;
     opacity: 0;
 }
@@ -59,14 +59,15 @@ table {
    
     width: 10px;
     height: 10px;
-    overflow: hidden;
     border-radius: 7px;
-    background-color: #BAE9FD;
+    background-color: darkblue;
+    visibility: hidden;
 }
 
 ::-webkit-scrollbar-thumb:hover{
     padding: 1px;
     border: 1px solid gray;
+    visibility: visible;
 }
 ::-webkit-scrollbar-button{
     display: none;

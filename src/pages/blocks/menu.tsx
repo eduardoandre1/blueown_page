@@ -20,21 +20,21 @@ export default  function Menu(){
                 <ol className={navbar}>
                     <li>
                         <Link to={'/'}>
-                        inicio
+                        Inicio
                         </Link>
                     </li>
                     <li>
                         <Link to={"/sobre"}>
-                        sobre
+                        Sobre
                         </Link>
                     </li><li>
-                        <Link to={"/serviços"}>
-                        serviços
+                        <Link to={"/Soluções"}>
+                        Soluções
                         </Link>
                     </li>
                     <li>
                         <Link to={"/contatos"}>
-                        contatos
+                        Contatos
                         </Link>
                     </li>
                 </ol>

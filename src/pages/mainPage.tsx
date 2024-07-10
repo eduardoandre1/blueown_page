@@ -16,7 +16,7 @@ export default function MainPage(){
                         <Route path="/" index element={ <CarosselBlock />} />
                         <Route path="/contatos" element={ <ContactPage />} />
                         <Route path="/sobre" element={<AboutPage /> } />
-                        <Route path="/serviços" element={<APT />} />
+                        <Route path="/Soluções" element={<APT />} />
                         </Routes>
                     <FooterBlock />
                 </PageStyle>
