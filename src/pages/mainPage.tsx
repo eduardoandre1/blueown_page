@@ -1,5 +1,4 @@
 import PageStyle from "../styles/display_page";
-import AboutPage from "./AboutPage";
 import CarosselBlock from "./blocks/Carossel";
 import FooterBlock from "./blocks/footer";
 import Menu from "./blocks/menu";
