@@ -1,12 +1,12 @@
 import styled from "styled-components"
-import FormSubmit from "./emails/formSubmit"
+import FormBlock from "./emails/formBlock"
 import MapBlock from "./blocks/map"
 export default function ContactPage(){
     return (
     <ContactPageStyle>
             <div className="block">
                 <div className="subBlock">
-                <FormSubmit />
+                <FormBlock />
                 </div>
                 <div className="subBlock">
                 <MapBlock />

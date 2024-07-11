@@ -10,7 +10,7 @@ h1{
     display: flex;
     text-align: center;
     align-items: center;
-    font-size: clamp(1px, 5px + 2vw, 2em);
+    font-size: clamp(5px, 5px + 6vw, 2em);
     color:  #0448C5;
 }
 
