@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import whatsaap from "../../../src/assets/whatsapp.svg";
+import whatsaap from "../../src/assets/whatsapp.svg";
 
-import linkedin from "../../../src/assets/linkedin.svg";
-import instagram from "../../../src/assets/instagram.svg";
-import telephone from "../../../src/assets/telephone-svgrepo-com.svg";
+import linkedin from "../../src/assets/linkedin.svg";
+import instagram from "../../src/assets/instagram.svg";
+import telephone from "../../src/assets/telephone-svgrepo-com.svg";
 
 function FooterBlock(){
     return(

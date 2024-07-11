@@ -1,24 +1,24 @@
 import PageStyle from "../styles/display_page";
-import CarosselBlock from "./blocks/Carossel";
-import FooterBlock from "./blocks/footer";
-import Menu from "./blocks/menu";
+import CarosselBlock from "./begin/Carossel";
+import FooterBlock from "./footer";
+import Menu from "./menu";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ContactPage from "./contatosPage";
-import APT from "./AboutPageTurbo";
+import ContactPage from "./contacts/contatosPage";
+import APT from "./about/AboutPageTurbo";
 
 export default function MainPage(){
     return (
             <BrowserRouter>
+                <Menu />
                 <PageStyle>
-                    <Menu />
-                        <Routes>
+                    <Routes>
                         <Route path="/" index element={ <CarosselBlock />} />
                         <Route path="/contatos" element={ <ContactPage />} />
                         <Route path="/sobre" element={<APT /> } />
                         <Route path="/Soluções" element={<APT />} />
-                        </Routes>
-                    <FooterBlock />
+                    </Routes>
                 </PageStyle>
+                <FooterBlock />
             </BrowserRouter>
     )
 }

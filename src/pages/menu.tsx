@@ -1,5 +1,5 @@
 import { useState } from "react"
-import MenuStyle from "../../styles/menu/menuStyle"
+import MenuStyle from "../styles/menu/menuStyle"
 import {Link} from "react-router-dom"
 
 

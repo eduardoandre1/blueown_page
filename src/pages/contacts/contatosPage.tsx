@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import FormBlock from "./emails/formBlock"
-import MapBlock from "./blocks/map"
+import MapBlock from "./components/map"
 export default function ContactPage(){
     return (
     <ContactPageStyle>

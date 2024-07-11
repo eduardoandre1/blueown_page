@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import owlOnHill from "../assets/owl-in-hill.jpeg"
-import imageConections from "../assets/conectionsLogo.jpeg"
+import owlOnHill from "../../assets/owl-in-hill.jpeg"
+import imageConections from "../../assets/conectionsLogo.jpeg"
 
 export default function APT(){
     return (<PageStyle>
