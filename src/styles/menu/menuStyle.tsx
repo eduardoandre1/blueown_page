@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
 const MenuStyle = styled.header`
-
-width: 110dvw ;
+width: 100dvw ;
 background: black;
 position: fixed;
 z-index: 15;
 h1{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    font-size: clamp(5px, 5px + 6vw, 2em);
-    color:  #0448C5;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: clamp(5px, 5px + 6vw, 2em);
+  color:  #0448C5;
 }
 
 .menu {
@@ -44,6 +43,19 @@ li:hover {
 li a{
   all: unset;
   padding: 8px;
+}
+.overButton{
+  position: fixed;
+  width: 100dvw;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.2;
+  z-index: 2;
+}
+.disabled{
+  display: none;
 }
 @media (min-width: 960px) {
     .mobile-button {display: none;}

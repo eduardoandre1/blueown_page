@@ -1,4 +1,4 @@
-import PageStyle from "../styles/display_page";
+import PageStyle from "../styles/PagesStyle";
 import CarosselBlock from "./begin/Carossel";
 import FooterBlock from "./footer";
 import Menu from "./menu";

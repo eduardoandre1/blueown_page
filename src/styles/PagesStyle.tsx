@@ -10,7 +10,8 @@ flex-direction: column;
 align-content: center;
 align-items: center;
 padding: 0 auto;
-position: absolute;
+padding-top: 50px;
+padding-bottom: 35px;
 `
 export default PageStyle
 

@@ -33,8 +33,6 @@ export default function APT(){
     </PageStyle>)
 }
 const PageStyle = styled.section`
-padding-top: 50px;
-padding-bottom: 35px;
 .moldBox {
     margin-top: 20px;
     padding:10px;

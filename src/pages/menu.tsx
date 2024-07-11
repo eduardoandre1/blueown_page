@@ -6,9 +6,11 @@ import {Link} from "react-router-dom"
 export default  function Menu(){
     const [navbar,setNavbar] = useState("navbar-links")
     const [mobileMenu,setMobileMenu] = useState("mobile-button")
+    const [overButton,setOverButton] = useState("overButton disabled")
     function toogleNavbar(){
         navbar==="navbar-links"?setNavbar("navbar-links show"):setNavbar("navbar-links")
         mobileMenu==="mobile-button"?setMobileMenu("mobile-button isOpen"):setMobileMenu("mobile-button")
+        overButton==="overButton"?setOverButton("overButton disabled"):setOverButton("overButton")
     }
 
     return (
@@ -45,6 +47,8 @@ export default  function Menu(){
                     <div className="mobile-button-line"></div>
                     <div className="mobile-button-line"></div>
                 </div>
+                <button className={overButton} onClick={()=>{
+                    toogleNavbar()}}></button>
             </div>
         </MenuStyle>
     )
