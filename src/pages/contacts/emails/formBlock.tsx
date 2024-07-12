@@ -15,7 +15,7 @@ function FormBlock(){
         const formSubmit= await formSubmitFunction({name:name,message:message})
         console.log(formSubmit.data.success)
        
-        if(nodeMailer.data === 'enviado' && formSubmit.data.success){
+        if(nodeMailer.data === 'enviado' || formSubmit.data.success){
             setResquest('sucess')
         }
     }

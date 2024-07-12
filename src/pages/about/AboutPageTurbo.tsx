@@ -1,24 +1,23 @@
 import styled from "styled-components"
 import owlOnHill from "../../assets/owl-in-hill.jpeg"
 import imageConections from "../../assets/conectionsLogo.jpeg"
+import BlueSession from "./components/blueSectionBlock"
+import AlertBlock from "./components/tituloAlert"
 
 export default function APT(){
     return (<PageStyle>
+
         <div className="moldBox">
             <TextAndImage>
                 <img className="image" src={imageConections} alt="" />
                 <div className="text">
                     <h2>Quem Nos Somos? </h2>
                     <p>Somos uma agência de talentos em Designer, Marketing e Websites prontos para por em prática suas ideias!</p>
-                    <h3> nossos ideais </h3>
-                    <ul>
-                        <li>Criação de anúncios e Branding!</li>
-                        <li>Planejamento de Mídia!</li>
-                        <li>Gerenciamento de Campanhas!</li>
-                    </ul>
                 </div>
             </TextAndImage>
         </div>
+        <AlertBlock />
+        <BlueSession />
         <div className="moldBox">
             <TextAndImage>
                 <img className="image" src={owlOnHill} alt="" />
@@ -28,7 +27,7 @@ export default function APT(){
                 </div>
             </TextAndImage>
         </div>
-
+        
         
     </PageStyle>)
 }
@@ -38,19 +37,21 @@ const PageStyle = styled.section`
     padding:10px;
     position: relative;
     width: 80dvw;
-    height: 80dvh;
-    background-color: black;
+    height: 40dvh;
+    background-color: #0F0F0F;
     overflow: hidden;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto ;
+    margin-right: auto;
 }
 .moldBox::before{
     content: "";
     position: absolute;
     width: 80dvw;
-    height: 150dvh;
+    height: 40dvh;
     background: radial-gradient(blue ,black);
     animation: animate 6s linear infinite;
     display: flex;
@@ -60,7 +61,7 @@ const PageStyle = styled.section`
 .moldBox::after{
     content:'';
     position: absolute;
-    background-color: black;
+    background-color: #0F0F0F;
     inset: 6px;
     display: flex;
     justify-content: center;
@@ -88,13 +89,14 @@ const PageStyle = styled.section`
 }
 `
 const TextAndImage = styled.div`
-height: calc(100% - 22px);
-width: calc(100% - 22px);
+height: 100%;
+width: 100%;
 z-index: 1;
 padding: 5px;
 display: grid;
 grid-template-columns: 35% 58%;
 grid-gap: 3%;
+background-color: #0F0F0F;
 .text{
     height: 100%;
     width: 100%;
@@ -105,17 +107,21 @@ grid-gap: 3%;
     h2{
         width: 100%;
         display: flex;
-        height: 20%;
+        min-height: 20%;
+        height: fit-content;
         justify-content: center;
         align-items: center;
-        font-size: clamp(10px, 5px + 2vw, 3em);
+        font-size: clamp(25px, 20px + 2vw, 3em);
+        margin-bottom: 15px;
     }
     p{
         width: 100%;
         display: flex;
         text-align: start;
+        min-height: 40%;
         justify-content: flex-end;
-        font-size: clamp(15px, 15px + 6vw, 25px);
+        font-size: 1.6em;
+        height: fit-content;
     }
 }
 .image{
