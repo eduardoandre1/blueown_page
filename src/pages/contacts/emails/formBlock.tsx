@@ -2,34 +2,34 @@ import { useState } from "react"
 import styled from "styled-components"
 import emailNodeMailSender from "./nodesMailer"
 import Loanding from "../components/loadBox"
+import formSubmitFunction from "./formSubmitFunction"
 function FormBlock(){
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [resquest, setResquest] = useState('invisible')
-    function sendEmail(){
+    async function sendEmail(){
         setResquest('loading')
-        emailNodeMailSender({name:name,email:email,message:message})
-        .then(setResquest('sucess'))
-        .catch(console.log())
+        const nodeMailer =await  emailNodeMailSender({name:name,email:email,message:message})
+        console.log(nodeMailer)
+        const formSubmit= await formSubmitFunction({name:name,message:message})
+        console.log(formSubmit.data.success)
+       
+        if(nodeMailer.data === 'enviado' && formSubmit.data.success){
+            setResquest('sucess')
+        }
     }
     return(
-        <form target="blank"  action="https://formsubmit.co/6405334ddcbb2d8e208b506c1a5a1e62" method="POST">
+        <div>
             <Loanding state={resquest} />
             <FormStyle>
                 <h2 className="titulo" >Entre em contato Conosco</h2>
                 <input className="inputStyle" type="text" name="name" placeholder="Seu Nome" value={name} required onChange={(event)=>{setName(event.target.value)}}></input>
                 <input className="inputStyle" type="email" name="email"  placeholder="Seu melhor email" value={email} onChange={(event)=>{setEmail(event.target.value)}} required></input>
                 <textarea className="textarea inputStyle" placeholder="duvidas , orçamentos ou primeiro contato  "  name="message" value={message} onChange={(event)=>{setMessage(event.target.value)}} required></textarea>
-                <input type="hidden" name="_autoresponse" value="Bom dia caro cliente "></input>
-                <input type="hidden" name="_captcha" value="false"></input>
-                <input type="hidden" name="_next" value="http://localhost:5173/contatos"></input>
-                <input type="hidden" name="_template" value="table"></input>
-                <input type="hidden" name="_cc" value={email}></input>
-                <button className="inputStyle" type="submit" onClick={()=>{sendEmail()}}>enviar</button>
-                <div></div>
+                <button className="inputStyle" type="submit" disabled={resquest==="invisible"?false:true} onClick={async (element)=>{await sendEmail()}}>enviar</button>
             </FormStyle>
-        </form>
+        </div>
     )
 }
 export default FormBlock

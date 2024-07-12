@@ -62,6 +62,7 @@ img{
 }
 @keyframes groin {
     0%{ transform: scale(0.001)}
-    100%{ transform:scale(1.8)}
+    50%{ transform:scale(1.8)}
+    100%{transform: scale(0.001)}
 }
 `
