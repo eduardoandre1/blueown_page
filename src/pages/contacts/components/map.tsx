@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import localization from"../../../../src/assets/localization.png";
 import instagram from "../../../../src/assets/instagram.svg";
-import linkedin from "../../../../src/assets/linkedin.svg"
-import whatsapp from "../../../../src/assets/whatsapp.svg"
+import linkedin from "../../../../src/assets/linkedin.png"
+import whatsapp from "../../../../src/assets/whatsapp.png"
 
 export default function MapBlock(){
     return(

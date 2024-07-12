@@ -1,12 +1,21 @@
 import { useState } from "react"
 import styled from "styled-components"
 import emailNodeMailSender from "./nodesMailer"
+import Loanding from "../components/loadBox"
 function FormBlock(){
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [resquest, setResquest] = useState('invisible')
+    function sendEmail(){
+        setResquest('loading')
+        emailNodeMailSender({name:name,email:email,message:message})
+        .then(setResquest('sucess'))
+        .catch(console.log())
+    }
     return(
-        <form target="black"  action="https://formsubmit.co/6405334ddcbb2d8e208b506c1a5a1e62" method="POST">
+        <form target="blank"  action="https://formsubmit.co/6405334ddcbb2d8e208b506c1a5a1e62" method="POST">
+            <Loanding state={resquest} />
             <FormStyle>
                 <h2 className="titulo" >Entre em contato Conosco</h2>
                 <input className="inputStyle" type="text" name="name" placeholder="Seu Nome" value={name} required onChange={(event)=>{setName(event.target.value)}}></input>
@@ -17,7 +26,7 @@ function FormBlock(){
                 <input type="hidden" name="_next" value="http://localhost:5173/contatos"></input>
                 <input type="hidden" name="_template" value="table"></input>
                 <input type="hidden" name="_cc" value={email}></input>
-                <button className="inputStyle" type="submit" onClick={()=>{emailNodeMailSender({name:name,email:email,message:message})}}>enviar</button>
+                <button className="inputStyle" type="submit" onClick={()=>{sendEmail()}}>enviar</button>
                 <div></div>
             </FormStyle>
         </form>
