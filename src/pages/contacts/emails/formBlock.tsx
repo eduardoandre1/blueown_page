@@ -27,7 +27,7 @@ function FormBlock(){
                 <input className="inputStyle" type="text" name="name" placeholder="Seu Nome" value={name} required onChange={(event)=>{setName(event.target.value)}}></input>
                 <input className="inputStyle" type="email" name="email"  placeholder="Seu melhor email" value={email} onChange={(event)=>{setEmail(event.target.value)}} required></input>
                 <textarea className="textarea inputStyle" placeholder="duvidas , orçamentos ou primeiro contato  "  name="message" value={message} onChange={(event)=>{setMessage(event.target.value)}} required></textarea>
-                <button className="inputStyle" type="submit" disabled={resquest==="invisible"?false:true} onClick={async (element)=>{await sendEmail()}}>enviar</button>
+                <button className="inputStyle" type="submit" disabled={resquest==="invisible"?false:true} onClick={async ()=>{await sendEmail()}}>enviar</button>
             </FormStyle>
         </div>
     )
