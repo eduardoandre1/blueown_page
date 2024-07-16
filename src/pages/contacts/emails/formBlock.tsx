@@ -12,11 +12,16 @@ function FormBlock(){
         setResquest('loading')
         const nodeMailer =await  emailNodeMailSender({name:name,email:email,message:message})
         console.log(nodeMailer)
-        const formSubmit= await formSubmitFunction({name:name,message:message})
-        console.log(formSubmit.data.success)
-       
-        if(nodeMailer.data === 'enviado' || formSubmit.data.success){
+        if(nodeMailer.data === 'enviado' ){
             setResquest('sucess')
+            setTimeout(() => setResquest('invisible'),2000)
+        }else{
+            const formSubmit= await formSubmitFunction({name:name,message:message})
+            console.log(formSubmit)
+            if(formSubmit.data.success){
+                setResquest('sucess')
+                setTimeout(() => setResquest('invisible'),2000)
+            }
         }
     }
     return(
@@ -34,7 +39,7 @@ function FormBlock(){
 }
 export default FormBlock
 
-const FormStyle = styled.div`
+const FormStyle = styled.form`
  display: grid;
  width: 100%;
  grid-template-rows: repeat(8, 1fr);

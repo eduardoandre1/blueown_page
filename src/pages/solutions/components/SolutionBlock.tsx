@@ -16,8 +16,8 @@ export default function SolutionBlock({text,title,row,column}:inputSoltionBlock)
         </SolutionsBlock>) 
 }
 const SolutionsBlock = styled.section<{ $column?: string ,$row?:string}>`
-width: 100% ;
-height: 100%;
+width: calc(100% - 5px) ;
+height: calc(100% - 5px);
 grid-column: ${props => props.$column};
 grid-row: ${props => props.$row};
 border: 6px double lightblue ;
@@ -27,7 +27,7 @@ overflow: hidden;
 flex-direction: column-reverse;
 p{
     overflow: auto;
-    color: white;
+    color: lightblue;
     font-size: large;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ p{
     height: 35%;
     width: 95%;
     margin: 0 auto;
-    font-size: 1em ;
+    font-size: clamp(15px,10px, + 20dvw, 1.4rem) ;
     z-index: 1;
 }
 
@@ -45,7 +45,7 @@ h2{
     justify-content: center;
     text-align: center;
     font-size: 2.7em;
-    z-index: 1;
+    z-index: 2;
 }
 img{
     width: 100%;
@@ -53,13 +53,13 @@ img{
     position: absolute;
     top: 100%;
     opacity: 0.6;
-    z-index: 0;
+    z-index: -1;
     
 
 }
 :hover{
     img{
-        animation: downImage 2s linear forwards; 
+        animation: downImage 1.5s ease-in forwards; 
     }
     h2{
         color: white;
@@ -75,5 +75,7 @@ div{
     width: 100%;
     z-index: 1;
 }
-
+@media (max-width:768px) {
+    height: 60dvh;
+}
 `

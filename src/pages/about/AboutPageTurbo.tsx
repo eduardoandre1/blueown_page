@@ -4,7 +4,7 @@ import imageConections from "../../assets/conectionsLogo.jpeg"
 import BlueSession from "./components/blueSectionBlock"
 import AlertBlock from "./components/tituloAlert"
 
-export default function APT(){
+export default function AboutPage(){
     return (<PageStyle>
 
         <div className="moldBox">
@@ -133,7 +133,11 @@ background-color: #0F0F0F;
 @media(max-width: 768px) {
     .text{
         p {
-            font-size: clamp(1px,2vw, 1em);
+            font-size: 12px;
+            overflow: auto;
+        }
+        h2{
+            font-size:24px
         }
     }
 }

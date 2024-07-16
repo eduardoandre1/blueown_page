@@ -3,7 +3,7 @@ import styled from "styled-components";
 const BlockStyle = styled.section`
 width: 100dvw;
 display: flex;
-min-height: 100dvh;
+min-height: fit-content;
 flex-direction: column;
 align-items: center;
 margin-top: 35px;
@@ -18,8 +18,16 @@ h2{
     margin-top: 10px;
     margin-bottom: 40px;
     height: 70px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
+@media (max-width: 768px) {
+    h2{
+        font-size: 30px;
+    }
+}
 `
 export default BlockStyle

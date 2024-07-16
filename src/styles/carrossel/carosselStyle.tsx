@@ -6,9 +6,10 @@ background-size: cover;
 display: flex;
 align-items: center;
 justify-content: center;
+margin-top: 30px;
 img{
     overflow: hidden;
-    height: calc(40dvh - 86px);
+    height: calc(50dvh - 86px);
     opacity: 1;
 }
 `
