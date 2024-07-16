@@ -12,7 +12,7 @@ export default function APT(){
                 <img className="image" src={imageConections} alt="" />
                 <div className="text">
                     <h2>Quem Nos Somos? </h2>
-                    <p>Somos uma agência de talentos em Designer, Marketing e Websites prontos para por em prática suas ideias!</p>
+                    <p>Somos uma agência de talentos em Designer, Marketing e Websites prontos para por em prática suas ideias! Nossa empresa é feita de inovadores  para inovadores,pessoas que buscam a expansão e a conversão de marcas para o digital  </p>
                 </div>
             </TextAndImage>
         </div>
@@ -120,7 +120,7 @@ background-color: #0F0F0F;
         text-align: start;
         min-height: 40%;
         justify-content: flex-end;
-        font-size: 1.6em;
+        font-size:1.4em;
         height: fit-content;
     }
 }

@@ -40,7 +40,7 @@ details{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    animation: shyning 2s linear infinite;
+    //animation: shyning 2s linear infinite;
     border-radius:6px;
 }
 @keyframes shyning {
@@ -56,10 +56,5 @@ summary{
     align-items: center;
     border-radius:8%;
     color: white;
-}
-@keyframes shyning2 {
-    0% { transform: scale(1.2)}
-    50% { transform: scale(1.0)}
-    100% { transform: scale(1.2)}
 }
 `

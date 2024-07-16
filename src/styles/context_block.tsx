@@ -6,8 +6,7 @@ display: flex;
 min-height: 100dvh;
 flex-direction: column;
 align-items: center;
-margin-top: 50px;
-background-color: darkblue;
+margin-top: 35px;
 overflow-y: scroll;
 h2{
     width: 100%;

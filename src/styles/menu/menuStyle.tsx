@@ -10,7 +10,7 @@ h1{
   text-align: center;
   align-items: center;
   font-size: clamp(5px, 5px + 6vw, 2em);
-  color:  #0448C5;
+  color:  lightblue;
 }
 
 .menu {

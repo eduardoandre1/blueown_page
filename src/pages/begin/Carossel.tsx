@@ -17,6 +17,50 @@ function CarosselBlock() {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
+      <Carousel.Item>
+      <CarosselStyle>
+            <img src={logo} alt="" />
+        </CarosselStyle>
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <CarosselStyle>
+            <img src={logo} alt="" />
+        </CarosselStyle>
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <CarosselStyle>
+            <img src={logo} alt="" />
+        </CarosselStyle>
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <CarosselStyle>
+            <img src={logo} alt="" />
+        </CarosselStyle>
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
     </BlockStyle>
     
