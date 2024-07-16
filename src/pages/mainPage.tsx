@@ -1,5 +1,4 @@
 import PageStyle from "../styles/PagesStyle";
-import CarosselBlock from "./begin/Carossel";
 import FooterBlock from "./footer";
 import Menu from "./menu";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
