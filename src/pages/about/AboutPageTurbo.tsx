@@ -2,7 +2,7 @@ import styled from "styled-components"
 import owlOnHill from "../../assets/owl-in-hill.jpeg"
 import imageConections from "../../assets/conectionsLogo.jpeg"
 import BlueSession from "./components/blueSectionBlock"
-import AlertBlock from "./components/tituloAlert"
+import MoldBoxStyle from "../../styles/moldBox"
 
 export default function AboutPage(){
     return (<PageStyle>
@@ -16,7 +16,11 @@ export default function AboutPage(){
                 </div>
             </TextAndImage>
         </div>
-        <AlertBlock />
+        <MoldBoxStyle $height='13dvh' $width=''>
+        <div className='moldBox2'>
+          <h2> Venha ser time #BlueOwl</h2>
+        </div>
+      </MoldBoxStyle>
         <BlueSession />
         <div className="moldBox">
             <TextAndImage>

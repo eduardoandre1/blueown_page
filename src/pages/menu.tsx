@@ -1,6 +1,7 @@
 import { useState } from "react"
 import MenuStyle from "../styles/menu/menuStyle"
 import {Link} from "react-router-dom"
+import Logo from "../assets/Logo.jpg"
 
 
 export default  function Menu(){
@@ -17,6 +18,7 @@ export default  function Menu(){
         <MenuStyle>
             <div className="menu">
                 <div className="logo">
+                <img src={Logo} alt="" />
                 <h1> Blueowl Publicidade</h1>
                 </div>
                 <ol className={navbar}>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 const  MoldBoxStyle = styled.section<{$height:string ; $width:string} >`
-.moldBox {
-    padding:10px;
+.moldBox2 {
+    padding:15px;
     position: relative;
     width: ${props => props.$width? props.$width:'80dvw'};
     height: ${props => props.$height? props.$height:'40dvh'};
@@ -11,20 +11,22 @@ const  MoldBoxStyle = styled.section<{$height:string ; $width:string} >`
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     margin:0  auto ;
+    margin-top: 30px;
 }
-.moldBox::before{
+.moldBox2::before{
     content: "";
     position: absolute;
     width: 80dvw;
     height: 40dvh;
-    background: radial-gradient(blue ,black);
+    background: radial-gradient(#FA32F4 ,black);
     animation: animate 6s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.moldBox::after{
+.moldBox2::after{
     content:'';
     position: absolute;
     background-color: #0F0F0F;

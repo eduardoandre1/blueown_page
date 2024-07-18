@@ -2,15 +2,30 @@ import styled from "styled-components";
 
 const MenuStyle = styled.header`
 width: 100dvw ;
-background: black;
+background: #010028;
 position: fixed;
 z-index: 15;
 h1{
   display: flex;
   text-align: center;
   align-items: center;
-  font-size: clamp(5px, 5px + 6vw, 2em);
+  font-size: clamp(5px, 5px + 5vw, 2em);
   color:  lightblue;
+  margin-left: 2dvw;
+}
+.logo{
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+img {
+  height:4em;
+  width: min-content;
+  border-radius: 50%;
+  overflow: hidden;
+  border-style: groove;
+  border: 3px solid lightblue;
 }
 
 .menu {
