@@ -3,11 +3,11 @@ import background from "../../../assets/animated-text-fill.png"
 
 export default function AlertBlock(){
     return(<AlertTitleStyle>
-        <p>
+        <h2>
             <span>
-                O que podemos fazer por você?
+                Soluções feitas a sua medida
             </span>
-        </p>
+        </h2>
     </AlertTitleStyle>)
 }
 
@@ -23,12 +23,11 @@ const AlertTitleStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    p {
+    margin-top: 25px;
+    h2 {
         text-transform: uppercase;
         letter-spacing: .5em;
         display: flex;
-        border: 4px double rgba(255,255,255,.25);
         border-width: 4px 0;
         padding: 1.5em 0em;
         height: 60px;
@@ -39,12 +38,11 @@ const AlertTitleStyle = styled.div`
         align-items: center;
     }
     span {
-        font: 700 4em/1 "Oswald", sans-serif;
+        font: 700 4em/1 "Rubiks", sans-serif;
         letter-spacing: 0;
         padding: .25em 0 .325em;
         display: block;
         
-        text-shadow: 0 0 80px rgba(255,255,255,.5);
         color: red;
         background: url(${background}) repeat-y;
         -webkit-background-clip: text;

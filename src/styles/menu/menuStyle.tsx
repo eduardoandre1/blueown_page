@@ -9,9 +9,10 @@ h1{
   display: flex;
   text-align: center;
   align-items: center;
-  font-size: clamp(5px, 5px + 5vw, 2em);
+  font-size: clamp(0.5em, 2px + 3vw, 1em);
   color:  lightblue;
-  margin-left: 2dvw;
+  margin-left: 1dvw;
+  font-family: "Rubik Mono One";
 }
 .logo{
   overflow: hidden;
@@ -20,7 +21,7 @@ h1{
   height: 100%;
 }
 img {
-  height:4em;
+  height:2.5em;
   width: min-content;
   border-radius: 50%;
   overflow: hidden;
@@ -45,7 +46,8 @@ img {
 
 li {
   color: #B1E3FC;
-  font-size: 20px;
+  font-size: 15px;
+  font-family: 'Inter', Courier, monospace;
 
   transition: color 0.1s;
 }
@@ -75,8 +77,8 @@ li a{
 @media (min-width: 960px) {
     .mobile-button {display: none;}
 }
-@media (max-width: 960px) {
-    .navbar-links {
+@media (max-width: 960px) {  
+  .navbar-links {
     opacity: 0;
     transform: translateY(-140%);
 

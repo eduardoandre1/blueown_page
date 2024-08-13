@@ -2,12 +2,14 @@ import styled from "styled-components"
 import BlockStyle from "../../styles/context_block"
 import SolutionBlock from "./components/SolutionBlock"
 import MoldBoxStyle from "../../styles/moldBox"
+import BlueSession from "../about/components/blueSectionBlock"
 
 export default function SolutionsPage(){
     return(<BlockStyle>
+        <BlueSession />
         <MoldBoxStyle $height="26dvh" $width="">
-            <div className="moldBox">
-                <h2>Nos do time BlueOwl temos a solução perfeita para você</h2>
+            <div className="moldBox2">
+                <h2>Soluções de diversas areas</h2>
             </div>
         </MoldBoxStyle>
         <StyleSectionRigtSide>

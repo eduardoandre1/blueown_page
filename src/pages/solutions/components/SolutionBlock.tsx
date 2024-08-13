@@ -12,7 +12,7 @@ export default function SolutionBlock({text,title,row,column}:inputSoltionBlock)
         <img src="https://www.jotform.com/blog/wp-content/uploads/2020/07/How-to-Become-a-Web-Designer-Your-Go-to-Guide-to-Kick-start-Your-Career-03-2.png" alt="guy build a web page" />
         </div>
         <p>{text}</p>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         </SolutionsBlock>) 
 }
 const SolutionsBlock = styled.section<{ $column?: string ,$row?:string}>`
@@ -39,13 +39,14 @@ p{
     z-index: 1;
 }
 
-h2{
+h3{
     all: unset;
     color: lightblue;
     justify-content: center;
     text-align: center;
-    font-size: 2.7em;
+    font-size: 2.1em;
     z-index: 2;
+    font-family: 'Rubik Mono One';
 }
 img{
     width: 100%;

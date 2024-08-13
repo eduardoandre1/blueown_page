@@ -1,5 +1,21 @@
 import styled from "styled-components";
 const  MoldBoxStyle = styled.section<{$height:string ; $width:string} >`
+.moldBox2 h2 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #B1E3FC;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    height: 70px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik Mono One";
+}
 .moldBox2 {
     padding:15px;
     position: relative;

@@ -2,11 +2,10 @@ import Carousel from 'react-bootstrap/Carousel';
 import logo  from '../../assets/logo.jpeg'
 import CarosselStyle from '../../styles/carrossel/carosselStyle';
 import BlockStyle from '../../styles/context_block';
-import AlertBlock from '../about/components/tituloAlert';
+//import AlertBlock from '../about/components/tituloAlert';
 function CarosselBlock() {
   return (
     <BlockStyle>
-      <AlertBlock />
       <Carousel>
       <Carousel.Item>
       <CarosselStyle>
