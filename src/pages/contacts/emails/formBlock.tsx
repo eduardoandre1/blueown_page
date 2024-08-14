@@ -30,11 +30,11 @@ function FormBlock(){
             <Loanding state={resquest} />
             <FormStyle>
                 <h2 className="titulo" >Dúvidas, Orçamentos ou Primeiro Contato</h2>
-                <input className="inputStyle" type="text" name="name" placeholder="Nome: " value={name} required onChange={(event)=>{setName(event.target.value)}} required></input>
-                <input className="inputStyle" type="email" name="email"  placeholder="Email: " value={email} onChange={(event)=>{setEmail(event.target.value)}} required></input>
-                <input className="inputStyle" type="tel" name='tel' placeholder="Telephone: " value={tel} onChange={(event) => {setTel(event.target.value)}} required></input>
+                <input className="inputStyle 1" type="text" placeholder="Nome: " value={name} required onChange={(event)=>{setName(event.target.value)}} required></input>
+                <input className="inputStyle 2" type="email"  placeholder="Email: " value={email} onChange={(event)=>{setEmail(event.target.value)}} required></input>
+                <input className="inputStyle 3" type="tel"  placeholder="Telephone: " value={tel} onChange={(event) => {setTel(event.target.value)}} required></input>
                 <textarea className="textarea inputStyle" placeholder="Mensagem: "  name="message" value={message} onChange={(event)=>{setMessage(event.target.value)}} required></textarea>
-                <button className="inputStyle" type="submit" disabled={resquest==="invisible"?false:true} onClick={async ()=>{await sendEmail()}}>enviar</button>
+                <button className="inputStyle 4" type="submit" disabled={resquest==="invisible"?false:true} onClick={async ()=>{await sendEmail()}}>enviar</button>
             </FormStyle>
         </>
     )
