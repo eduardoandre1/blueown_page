@@ -6,7 +6,7 @@ const  MoldBoxStyle = styled.section<{$height:string ; $width:string} >`
     align-items: center;
     color: #B1E3FC;
     text-align: center;
-    font-size: 60px;
+    font-size: campl(1rem, 15dvw, 9rem);
     margin-top: 10px;
     margin-bottom: 40px;
     height: 70px;

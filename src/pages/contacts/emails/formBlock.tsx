@@ -7,6 +7,7 @@ function FormBlock(){
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [tel, setTel] = useState('')
     const [resquest, setResquest] = useState('invisible')
     async function sendEmail(){
         setResquest('loading')
@@ -25,16 +26,17 @@ function FormBlock(){
         }
     }
     return(
-        <div>
+        <>
             <Loanding state={resquest} />
             <FormStyle>
-                <h2 className="titulo" >Entre em contato Conosco</h2>
-                <input className="inputStyle" type="text" name="name" placeholder="Seu Nome" value={name} required onChange={(event)=>{setName(event.target.value)}}></input>
-                <input className="inputStyle" type="email" name="email"  placeholder="Seu melhor email" value={email} onChange={(event)=>{setEmail(event.target.value)}} required></input>
-                <textarea className="textarea inputStyle" placeholder="duvidas , orçamentos ou primeiro contato  "  name="message" value={message} onChange={(event)=>{setMessage(event.target.value)}} required></textarea>
+                <h2 className="titulo" >Dúvidas, Orçamentos ou Primeiro Contato</h2>
+                <input className="inputStyle" type="text" name="name" placeholder="Nome: " value={name} required onChange={(event)=>{setName(event.target.value)}} required></input>
+                <input className="inputStyle" type="email" name="email"  placeholder="Email: " value={email} onChange={(event)=>{setEmail(event.target.value)}} required></input>
+                <input className="inputStyle" type="tel" name='tel' placeholder="Telephone: " value={tel} onChange={(event) => {setTel(event.target.value)}} required></input>
+                <textarea className="textarea inputStyle" placeholder="Mensagem: "  name="message" value={message} onChange={(event)=>{setMessage(event.target.value)}} required></textarea>
                 <button className="inputStyle" type="submit" disabled={resquest==="invisible"?false:true} onClick={async ()=>{await sendEmail()}}>enviar</button>
             </FormStyle>
-        </div>
+        </>
     )
 }
 export default FormBlock
@@ -42,16 +44,19 @@ export default FormBlock
 const FormStyle = styled.form`
  display: grid;
  width: 100%;
- grid-template-rows: repeat(8, 1fr);
- grid-gap: 20px;
+ height: 100%;
+ grid-template-rows: repeat(11, 1fr);
+ grid-gap: 15px;
+ z-index: 2;
  .titulo {
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
     grid-column: 1;
     display: block;
     width: 100%;
+    height: 100%;
  }
  .textarea{
-    grid-row: 5 / 7;
+    grid-row: 7 / 10 ;
     grid-column: 1;
     padding: 10px;
  }
@@ -64,11 +69,14 @@ const FormStyle = styled.form`
  h2{
     display: flex;
     width: 100%;
+    height: max-content;
     justify-content: center;
     align-items: end;
     color: #B1E3FC;
     text-align: center;
-
-    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    height: 100%;
  }
 `

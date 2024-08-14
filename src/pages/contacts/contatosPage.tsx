@@ -1,17 +1,22 @@
 import styled from "styled-components"
 import FormBlock from "./emails/formBlock"
 import MapBlock from "./components/map"
+import VideoBlockTree from "../begin/components/videoBlock3"
+
 export default function ContactPage(){
     return (
     <ContactPageStyle>
+            
             <div className="block">
                 <div className="subBlock">
-                <FormBlock />
+                    <FormBlock />
                 </div>
+                <VideoBlockTree />
                 <div className="subBlock">
-                <MapBlock />
+                    <MapBlock />
                 </div>
             </div>
+
     </ContactPageStyle>
     )
 }
@@ -19,10 +24,7 @@ export default function ContactPage(){
 const ContactPageStyle = styled.div`
     display: flex;
     width: 100dvw;
-    height: min-content;
-    min-height: 100dvh;
     padding-top: 100px;
-    padding-bottom: 40px;
     .block {
         height: 80dvh;
         width: 100dvw;
@@ -30,6 +32,7 @@ const ContactPageStyle = styled.div`
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     .subBlock {
         width: 50%;
